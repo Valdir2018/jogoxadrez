@@ -12,6 +12,7 @@ namespace projeto_jogo_xadrez
     {
         static void Main(string[] args)
         {
+            /**
             try
             {
 
@@ -28,6 +29,14 @@ namespace projeto_jogo_xadrez
             {
                 Console.WriteLine(e.Message);
             }
+         */
+
+            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+
+            Console.WriteLine(pos);
+            Console.WriteLine(pos.toPosicao());
+
+
             Console.ReadLine();
 
 
