@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace tabuleiro
-{
-    class Peca
+{  /** Classse abstrata, pois possui um método abstrato **/
+    abstract class Peca
     {
+
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
         public int qtdeMovimentos { get; protected set; }
@@ -25,5 +26,10 @@ namespace tabuleiro
         {
             qtdeMovimentos++;
         }
+
+        /** Retorna uma matriz de boleanos
+         *  Metodo abstrato, sem implementação na classe pai  **/
+        public abstract bool[,] movimentosPossiveis();
+        
     }
 }
