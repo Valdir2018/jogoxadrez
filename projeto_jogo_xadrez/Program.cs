@@ -23,6 +23,7 @@ namespace projeto_jogo_xadrez
                     try { 
                     Console.Clear();
                     Tela.imprimirPartida(partida);
+
                     Console.Write("Origem: ");
                     Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
                     partida.validarPosicaoDeOrigem(origem);
@@ -49,6 +50,9 @@ namespace projeto_jogo_xadrez
                     }
 
                 }
+
+                Console.Clear();
+                Tela.imprimirPartida(partida);
 
 
             }
